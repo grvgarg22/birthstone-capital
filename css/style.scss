@@ -263,16 +263,9 @@ body {font-family: 'Spectral', serif; position: relative;}
 	.navbar.navbar-expand-lg .navbar-brand,
 	.navbar.header.changed .navbar-brand {margin-top: 4rem;}
 	.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {font-size: 1.5rem;}
-	
-	.BC_section_1 .card .BC_scroll_link,
-	.BC_section_2a .card .BC_scroll_link,
-	.BC_section_2b .card .BC_scroll_link,
-	.BC_section_3 .BC_section_3_frame .BC_scroll_link,
-	.BC_section_4 .card .BC_scroll_link,
-	.BC_section_5 .BC_section_5_frame .BC_scroll_link,
-	.BC_section_6 .BC_section_6_frame .BC_scroll_link {font-size: 1rem;}
 
-	.BC_section_1 .card h1 {font-size: 4rem;}
+	.BC_section_1 .card h1,
+	.BC_section_7 .card h3 {font-size: 4rem;}
 	.BC_section_1 .card p {font-size: 1.5rem;}
 
 	.BC_section_2a .card h1,
@@ -281,7 +274,8 @@ body {font-family: 'Spectral', serif; position: relative;}
 	.BC_section_4 .card h1,
 	.BC_section_5 .BC_section_5_frame h1,
 	.BC_section_5 .BC_section_5_frame h1,
-	.BC_section_6 .BC_section_6_frame h1 {font-size: 1rem; margin-bottom: 1rem;}
+	.BC_section_6 .BC_section_6_frame h1,
+	.BC_section_7 .card h1 {font-size: 1rem; margin-bottom: 1rem;}
 
 	.BC_section_2a .card h2 {font-size: 3.5rem;}
 
@@ -310,7 +304,17 @@ body {font-family: 'Spectral', serif; position: relative;}
 	.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card {width: 32%;}
 	.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top {width: 14rem; margin-right: 2.5rem;}
 	.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-body p {font-size: 1rem;}
-
+	.BC_section_7 .card form .form-group {margin: 1.5rem 0;}
+	.BC_section_7 .card form .form-group input {font-size: 1.5rem;}
+	
+	.BC_section_1 .card .BC_scroll_link,
+	.BC_section_2a .card .BC_scroll_link,
+	.BC_section_2b .card .BC_scroll_link,
+	.BC_section_3 .BC_section_3_frame .BC_scroll_link,
+	.BC_section_4 .card .BC_scroll_link,
+	.BC_section_5 .BC_section_5_frame .BC_scroll_link,
+	.BC_section_6 .BC_section_6_frame .BC_scroll_link,
+	.BC_section_7 .card .BC_scroll_link {font-size: 1rem;}
 
 }
 
