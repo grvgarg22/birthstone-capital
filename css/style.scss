@@ -259,6 +259,33 @@ body {font-family: 'Spectral', serif; position: relative;}
 	}
 }
 
+@media only screen and (min-width: 1500px) {
+	.navbar.navbar-expand-lg .navbar-brand,
+	.navbar.header.changed .navbar-brand {margin-top: 4rem;}
+	.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {font-size: 1.5rem;}
+	
+	.BC_section_1 .card .BC_scroll_link,
+	.BC_section_2a .card .BC_scroll_link {font-size: 1rem;}
+
+	.BC_section_1 .card h1 {font-size: 4rem;}
+	.BC_section_1 .card p {font-size: 1.5rem;}
+
+	.BC_section_2a .card h1,
+	.BC_section_2b .card h1,
+	.BC_section_3 .BC_section_3_frame .BC_section_3a h1 {font-size: 1rem; margin-bottom: 1rem;}
+
+	.BC_section_2a .card h2 {font-size: 3.5rem;}
+
+	.BC_section_2a .card p,
+	.BC_section_2b .card p,
+	.BC_section_3 .BC_section_3_frame .BC_section_3a p {font-size: 1.5rem;}
+
+	.BC_section_2b .card ul li h3,
+	.BC_section_3 .BC_section_3_frame .BC_section_3a h3 {font-size: 3rem;}
+	.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button {font-size: 2rem;}
+	.BC_section_3 .BC_section_3_frame .BC_section_3b .card h3 {margin: 0 1rem auto; font-size: 3.5rem;}
+
+}
 
 @media only screen and (min-width: 1021px) and (max-width: 1260px) {
 	
@@ -301,7 +328,7 @@ body {font-family: 'Spectral', serif; position: relative;}
 	.navbar.header.changed {background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000;}
 
 	.BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6,
-	.BC_section_7 {width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -56rem;}
+	.BC_section_7 {width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover;}
 	
 	.BC_section_1 .card,
 	.BC_section_2a .card,
@@ -361,7 +388,7 @@ body {font-family: 'Spectral', serif; position: relative;}
 	.navbar.header.changed {background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000;}
 
 	.BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6,
-	.BC_section_7 {width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -58rem;}
+	.BC_section_7 {width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover;}
 	
 	.BC_section_1 .card,
 	.BC_section_2a .card,

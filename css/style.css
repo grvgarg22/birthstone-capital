@@ -1,12 +1,17 @@
 /******** Misc. CSS ********/
 body { font-family: 'Spectral', serif; position: relative; }
+
 .container-fluid { padding: 0; }
+
 .card { background: transparent; border: none; }
+
 .bg-dark { background: none !important; }
+
 .modal-backdrop.show { opacity: .9; }
 
 /******* light-header ********/
 .header { background-color: transparent; position: fixed; width: 100%; top: 0; left: 0; transition: 0.2s ease-in all; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0); z-index: 9999; }
+
 .navbar.header.changed { background-color: rgba(255, 255, 255, 0); }
 .navbar.header.changed .navbar-brand { margin-top: 3rem; background-color: transparent; }
 .navbar.header.changed .navbar-brand h1 { font-size: 8rem; letter-spacing: -0.5rem; line-height: 0.6; color: #000; }
@@ -40,6 +45,7 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_1 .card h1 { font-weight: 200; color: #fff; font-size: 3rem; margin-bottom: 2rem; }
 .BC_section_1 .card p { font-size: 1.2rem; color: #fff; font-weight: 200; width: 75%; }
 .BC_section_1 .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 5rem; }
+
 .BC_section_1:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #000; opacity: 0.5; }
 
 /******** #Who We Are ********/
@@ -49,6 +55,7 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_2a .card h2 { font-weight: 200; color: #fff; font-size: 2.8rem; margin-bottom: 1.5rem; width: 80%; }
 .BC_section_2a .card p { font-size: 0.9rem; color: #fff; font-weight: 300; width: 70%; }
 .BC_section_2a .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+
 .BC_section_2a:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #000; opacity: 0.5; }
 
 /******** #What we do ********/
@@ -60,6 +67,7 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_2b .card ul li { margin-bottom: 0.5rem; }
 .BC_section_2b .card ul li h3 { font-weight: 300; font-size: 2rem; color: #fff; margin: 0.5rem 0; }
 .BC_section_2b .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+
 .BC_section_2b:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #21343b; opacity: 0.85; }
 
 /******** #Our Approach ********/
@@ -81,6 +89,7 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_3 .BC_section_3_frame .BC_section_3b .card { margin-top: 2rem; }
 .BC_section_3 .BC_section_3_frame .BC_section_3b .card h3 { margin: 0 auto; font-size: 2.5rem; line-height: 0.85; }
 .BC_section_3 .BC_section_3_frame .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 5rem; left: 3rem; }
+
 .BC_section_3b:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
 
 /******** #Connect with Us ********/
@@ -95,6 +104,7 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_4 .card ul li span { margin: 0.5rem 1rem 0 0; color: #222; background-color: #fff; border-radius: 2rem; padding: 0 0.5rem; height: 1.5rem; }
 .BC_section_4 .card ul li p { margin: 0; width: 100%; }
 .BC_section_4 .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+
 .BC_section_4:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #151516; opacity: 0.75; }
 
 /******** #Our Team ********/
@@ -172,6 +182,17 @@ body { font-family: 'Spectral', serif; position: relative; }
 .BC_section_7 .card p { margin: 0; }
 .BC_section_7 .card .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 5rem; left: 3rem; }
 
+@media only screen and (min-width: 1500px) { .navbar.navbar-expand-lg .navbar-brand, .navbar.header.changed .navbar-brand { margin-top: 4rem; }
+  .navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link { font-size: 1.5rem; }
+  .BC_section_1 .card .BC_scroll_link, .BC_section_2a .card .BC_scroll_link { font-size: 1rem; }
+  .BC_section_1 .card h1 { font-size: 4rem; }
+  .BC_section_1 .card p { font-size: 1.5rem; }
+  .BC_section_2a .card h1, .BC_section_2b .card h1, .BC_section_3 .BC_section_3_frame .BC_section_3a h1 { font-size: 1rem; margin-bottom: 1rem; }
+  .BC_section_2a .card h2 { font-size: 3.5rem; }
+  .BC_section_2a .card p, .BC_section_2b .card p, .BC_section_3 .BC_section_3_frame .BC_section_3a p { font-size: 1.5rem; }
+  .BC_section_2b .card ul li h3, .BC_section_3 .BC_section_3_frame .BC_section_3a h3 { font-size: 3rem; }
+  .BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button { font-size: 2rem; }
+  .BC_section_3 .BC_section_3_frame .BC_section_3b .card h3 { margin: 0 1rem auto; font-size: 3.5rem; } }
 @media only screen and (min-width: 1021px) and (max-width: 1260px) { .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -56rem; }
   .BC_section_1 .card .BC_scroll_link, .BC_section_2a .card .BC_scroll_link, .BC_section_2b .card .BC_scroll_link, .BC_section_3 .BC_section_3_frame .BC_scroll_link, .BC_section_4 .card .BC_scroll_link, .BC_section_5 .BC_section_5_frame .BC_scroll_link, .BC_section_6 .BC_section_6_frame .BC_scroll_link, .BC_section_7 .card .BC_scroll_link { bottom: 1rem; left: 1rem; }
   .BC_section_2a .card h2, .BC_section_2b .card ul li h3 { font-size: 2rem; }
@@ -192,7 +213,7 @@ body { font-family: 'Spectral', serif; position: relative; }
   .navbar.navbar-expand-lg .navbar-toggler svg { width: 5rem; height: 5rem; color: #fff; }
   .navbar.header.changed .navbar-toggler svg { width: 5rem; height: 5rem; color: #000; }
   .navbar.header.changed { background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000; }
-  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -56rem; }
+  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; }
   .BC_section_1 .card, .BC_section_2a .card, .BC_section_2b .card, .BC_section_3 .BC_section_3_frame, .BC_section_4 .card, .BC_section_5 .BC_section_5_frame, .BC_section_6 .BC_section_6_frame, .BC_section_7 .card { width: 100%; padding: 4rem 1rem; }
   .BC_section_1 .card h1 { font-size: 2rem; margin-top: 9rem; margin-bottom: 1rem; }
   .BC_section_2a .card h1, .BC_section_2b .card h1, .BC_section_3 .BC_section_3_frame .BC_section_3a h1, .BC_section_4 .card h1, .BC_section_5 .BC_section_5_frame h1, .BC_section_6 .BC_section_6_frame h1, .BC_section_7 .card h1, .BC_section_3b { margin-top: 9rem; }
@@ -215,7 +236,7 @@ body { font-family: 'Spectral', serif; position: relative; }
   .navbar.navbar-expand-lg .navbar-brand h1, .navbar.header.changed .navbar-brand h1 { font-size: 4rem; }
   .navbar.navbar-expand-lg .navbar-brand p, .navbar.header.changed .navbar-brand p { font-size: 6px; margin-bottom: 0; }
   .navbar.header.changed { background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000; }
-  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -58rem; }
+  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; }
   .BC_section_1 .card, .BC_section_2a .card, .BC_section_2b .card, .BC_section_3 .BC_section_3_frame, .BC_section_4 .card, .BC_section_5 .BC_section_5_frame, .BC_section_6 .BC_section_6_frame, .BC_section_7 .card { width: 100%; padding: 4rem 1rem; }
   .BC_section_1 .card h1 { font-size: 1.5rem; margin-top: 7rem; margin-bottom: 1rem; }
   .BC_section_1 .card p { width: 100%; }
@@ -250,3 +271,4 @@ body { font-family: 'Spectral', serif; position: relative; }
   .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top { width: 5rem; margin: 0; }
   .BC_section_7 .card h3 { font-size: 2rem; } }
 
+/*# sourceMappingURL=style.css.map */
