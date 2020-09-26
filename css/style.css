@@ -1,0 +1,252 @@
+/******** Misc. CSS ********/
+body { font-family: 'Spectral', serif; position: relative; }
+.container-fluid { padding: 0; }
+.card { background: transparent; border: none; }
+.bg-dark { background: none !important; }
+.modal-backdrop.show { opacity: .9; }
+
+/******* light-header ********/
+.header { background-color: transparent; position: fixed; width: 100%; top: 0; left: 0; transition: 0.2s ease-in all; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0); z-index: 9999; }
+.navbar.header.changed { background-color: rgba(255, 255, 255, 0); }
+.navbar.header.changed .navbar-brand { margin-top: 3rem; background-color: transparent; }
+.navbar.header.changed .navbar-brand h1 { font-size: 8rem; letter-spacing: -0.5rem; line-height: 0.6; color: #000; }
+.navbar.header.changed .navbar-brand p { font-size: 0.8rem; margin-left: 0.5rem; color: #000; }
+.navbar.header.changed .nav-link.active { color: #000 !important; background-color: transparent !important; }
+.navbar.header.changed .nav-link.active span { border-bottom: 1px solid #000 !important; }
+.navbar.header.changed .dark_btns.btn-group { display: none; }
+.navbar.header.changed .light_btns.btn-group { display: block; }
+
+/******** Header ********/
+.navbar.navbar-expand-lg { position: fixed; z-index: 999; height: 100vh; width: 20%; flex-flow: column; justify-content: center; align-items: flex-start; padding: 2rem; background: transparent; margin: 0 3rem; }
+.navbar.navbar-expand-lg .navbar-brand { margin-top: 3rem; background-color: transparent; }
+.navbar.navbar-expand-lg .navbar-brand h1 { font-weight: 200; font-size: 8rem; letter-spacing: -0.5rem; line-height: 0.6; color: #fff; }
+.navbar.navbar-expand-lg .navbar-brand p { font-size: 0.8rem; margin-left: 0.5rem; color: #fff; }
+.navbar.navbar-expand-lg .navbar-collapse { flex-wrap: wrap; }
+.navbar.navbar-expand-lg .navbar-collapse .navbar-nav { flex-direction: column; margin: 1rem 0.5rem 4rem 0.5rem; }
+.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item { margin-bottom: 0.5rem; }
+.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link { padding: 0; color: #777a7a; font-size: 1.1rem; }
+.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link.active { color: #fff; background-color: transparent; }
+.navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link.active span { border-bottom: 1px solid #fff; }
+.navbar.navbar-expand-lg .dark_btns.btn-group { margin-left: -3rem; display: block; }
+.navbar.navbar-expand-lg .dark_btns.btn-group .btn { border: 1px solid #555555; border-radius: 2rem; background: #fff; padding: 0.18rem 0.5rem; margin: 0.5rem; }
+.navbar.navbar-expand-lg .dark_btns.btn-group .btn img { width: 1rem; color: #fff; }
+.navbar.navbar-expand-lg .light_btns.btn-group { margin-left: -3rem; display: none; }
+.navbar.navbar-expand-lg .light_btns.btn-group .btn { border: none; border-radius: 2rem; padding: 0; margin: 0.5rem; }
+.navbar.navbar-expand-lg .light_btns.btn-group .btn img { width: 2rem; }
+
+/******** #Home ********/
+.BC_section_1 { background-image: url(../img/banner1.jpg); height: 100vh; width: 100%; background-size: cover; position: relative; }
+.BC_section_1 .card { width: 76%; margin-left: auto; padding: 4rem; z-index: 998; height: 100vh; }
+.BC_section_1 .card h1 { font-weight: 200; color: #fff; font-size: 3rem; margin-bottom: 2rem; }
+.BC_section_1 .card p { font-size: 1.2rem; color: #fff; font-weight: 200; width: 75%; }
+.BC_section_1 .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 5rem; }
+.BC_section_1:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #000; opacity: 0.5; }
+
+/******** #Who We Are ********/
+.BC_section_2a { background-image: url(../img/banner2.jpg); height: 100vh; width: 100%; background-size: cover; position: relative; }
+.BC_section_2a .card { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_2a .card h1 { font-weight: 300; color: #fff; font-size: 0.8rem; margin-bottom: 1rem; }
+.BC_section_2a .card h2 { font-weight: 200; color: #fff; font-size: 2.8rem; margin-bottom: 1.5rem; width: 80%; }
+.BC_section_2a .card p { font-size: 0.9rem; color: #fff; font-weight: 300; width: 70%; }
+.BC_section_2a .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+.BC_section_2a:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #000; opacity: 0.5; }
+
+/******** #What we do ********/
+.BC_section_2b { background-image: url(../img/banner3.jpg); height: 100vh; width: 100%; background-size: cover; position: relative; }
+.BC_section_2b .card { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_2b .card h1 { font-weight: 300; color: #fff; font-size: 0.8rem; margin-bottom: 1rem; }
+.BC_section_2b .card p { font-size: 1.1rem; color: #fff; font-weight: 300; width: 70%; }
+.BC_section_2b .card ul { list-style: none; padding: 0; margin-top: 0.5rem; }
+.BC_section_2b .card ul li { margin-bottom: 0.5rem; }
+.BC_section_2b .card ul li h3 { font-weight: 300; font-size: 2rem; color: #fff; margin: 0.5rem 0; }
+.BC_section_2b .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+.BC_section_2b:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #21343b; opacity: 0.85; }
+
+/******** #Our Approach ********/
+.BC_section_3 { background-image: url(../img/banner4.jpg); height: 100vh; width: 100%; background-size: cover; position: relative; }
+.BC_section_3 .BC_section_3_frame { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a h1 { font-weight: 300; font-size: 0.8rem; margin-bottom: 1rem; color: #222; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a p { font-size: 1.1rem; font-weight: 300; color: #222; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a h3 { font-weight: 300; font-size: 1.5rem; margin: 0.5rem 0; color: #222; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card { width: 100%; padding: 0; border-radius: 0; border-bottom: 1px solid #bbb; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header { background-color: transparent; padding: 0.5rem 0; border-bottom: 0; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button { padding: 0; color: #222; font-size: 1.5rem; font-weight: 300; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button svg.bi-plus { float: right; display: none; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button svg.bi-dash { float: right; display: block; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button.collapsed svg.bi-plus { float: right; display: block; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button.collapsed svg.bi-dash { float: right; display: none; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button:focus { box-shadow: none; text-decoration: none; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button:hover { text-decoration: none; color: #000; }
+.BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-body { padding: 0; }
+.BC_section_3 .BC_section_3_frame .BC_section_3b .card { margin-top: 2rem; }
+.BC_section_3 .BC_section_3_frame .BC_section_3b .card h3 { margin: 0 auto; font-size: 2.5rem; line-height: 0.85; }
+.BC_section_3 .BC_section_3_frame .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 5rem; left: 3rem; }
+.BC_section_3b:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+/******** #Connect with Us ********/
+.BC_section_4 { background-image: url(../img/banner5.jpg); height: 100vh; width: 100%; background-size: cover; position: relative; }
+.BC_section_4 .card { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_4 .card h1 { font-weight: 300; color: #fff; font-size: 0.8rem; margin-bottom: 1rem; }
+.BC_section_4 .card h3 { font-weight: 300; font-size: 1.5rem; margin: 0.5rem 0 1rem 0; color: #fff; width: 70%; }
+.BC_section_4 .card h4 { font-weight: 400; font-size: 1.2rem; color: #fff; margin: 0.5rem 0; }
+.BC_section_4 .card p { font-size: 1rem; color: #fff; font-weight: 200; width: 73%; }
+.BC_section_4 .card ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-between; }
+.BC_section_4 .card ul li { width: 44%; margin: 0.5rem 0; padding: 0.375rem; display: flex; }
+.BC_section_4 .card ul li span { margin: 0.5rem 1rem 0 0; color: #222; background-color: #fff; border-radius: 2rem; padding: 0 0.5rem; height: 1.5rem; }
+.BC_section_4 .card ul li p { margin: 0; width: 100%; }
+.BC_section_4 .card .BC_scroll_link { font-size: 0.8rem; color: #fff; position: absolute; bottom: 5rem; left: 3rem; }
+.BC_section_4:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #151516; opacity: 0.75; }
+
+/******** #Our Team ********/
+.BC_section_5 { height: 100vh; width: 100%; position: relative; }
+.BC_section_5 .BC_section_5_frame { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_5 .BC_section_5_frame h1 { font-weight: 300; color: #222; font-size: 0.8rem; margin-bottom: 1rem; }
+.BC_section_5 .BC_section_5_frame .card .card-img-top { border-radius: 0; }
+.BC_section_5 .BC_section_5_frame .card .card-body { padding: 0.5rem 0; }
+.BC_section_5 .BC_section_5_frame .card .card-body .card-title { font-size: 1.1rem; font-weight: 400; margin: 0; color: #000; }
+.BC_section_5 .BC_section_5_frame .card .card-body .card-text { font-size: 0.9rem; font-weight: 400; margin: 0; color: #222; margin-bottom: 0.375rem; }
+.BC_section_5 .BC_section_5_frame .card .card-body .social_link { border: none; }
+.BC_section_5 .BC_section_5_frame .card .card-body .social_link img { width: 1.2rem; }
+.BC_section_5 .BC_section_5_frame .card .card-body p { font-size: 0.8rem; font-weight: 400; color: #000; margin: 0.5rem 0; height: 8.5rem; }
+.BC_section_5 .BC_section_5_frame .card .card-body a { color: #000; border-bottom: 1px solid #000; border-top: 0; border-left: 0; border-right: 0; border-radius: 0; padding: 0; font-size: 0.8rem; background: transparent; }
+.BC_section_5 .BC_section_5_frame .card .card-body a:hover { text-decoration: none; }
+.BC_section_5 .BC_section_5_frame .card .card-body a:focus { box-shadow: none; }
+.BC_section_5 .BC_section_5_frame .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 2rem; left: 3rem; }
+
+.BC_team_modal.modal .modal-header { display: flex; flex-wrap: nowrap; }
+.BC_team_modal.modal .modal-header .modal-sub-header { display: flex; }
+.BC_team_modal.modal .modal-header .modal-sub-header .card-img-top { width: 4rem; margin: 0 0.8rem; border-radius: 2rem; }
+.BC_team_modal.modal .modal-header .modal-sub-header h3 { font-size: 1.5rem; }
+.BC_team_modal.modal .modal-header .modal-sub-header h4 { font-size: 1rem; }
+.BC_team_modal.modal .modal-header img { width: 1.5rem; margin: 0.5rem 1rem; }
+.BC_team_modal.modal .modal-body .card .card-img-top { width: 8rem; margin-right: 1rem; float: left; }
+.BC_team_modal.modal .modal-body .card .card-body { padding: 0 1.25rem; }
+
+/******** #Portfolio ********/
+.BC_section_6 { height: 100vh; width: 100%; position: relative; }
+.BC_section_6 .BC_section_6_frame { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_6 .BC_section_6_frame h1 { font-weight: 300; color: #222; font-size: 0.8rem; margin-bottom: 1rem; }
+.BC_section_6 .BC_section_6_frame p { font-size: 1rem; color: #000; font-weight: 400; margin-bottom: 0.5rem; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments { margin-top: 0.5rem; border-bottom: 1px solid #ddd; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments .card-title { font-size: 1rem; font-size: 400; color: #000; margin-bottom: 0.5rem; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments .card-body { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments .card-body a { background: transparent; border: none; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments .card-body a .card-img-top { width: 8rem; }
+.BC_section_6 .BC_section_6_frame .BC_current_investments .card-body a:focus { box-shadow: none; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments { margin-top: 1rem; width: 82%; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .card-title { font-size: 1rem; font-weight: 400; color: #000; margin-bottom: 1rem; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .card-text { font-size: 0.9rem; font-weight: 400; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card { border: 1px solid #ddd; border-radius: 0; padding: 0.5rem; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top { width: 10rem; margin-right: 4.5rem; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-body { padding: 0; margin-top: 0.5rem; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-body p { margin: 0 0 0 0.5rem; font-size: 0.8rem; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card a { color: #000; border-bottom: 1px solid #000; border-top: 0; border-left: 0; border-right: 0; border-radius: 0; padding: 0; font-size: 0.8rem; background: transparent; width: 5rem; margin: 0.5rem 0.5rem 0.5rem auto; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card a:hover { text-decoration: none; }
+.BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card a:focus { box-shadow: none; }
+.BC_section_6 .BC_section_6_frame .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 2rem; left: 3rem; }
+
+.BC_investment_modal.modal .modal-header { display: flex; flex-wrap: nowrap; }
+.BC_investment_modal.modal .modal-header .modal-sub-header { display: flex; }
+.BC_investment_modal.modal .modal-header .modal-sub-header .card-img-top { width: 5rem; height: 5rem; margin: 0 0.8rem 0 0; border-radius: 2rem; }
+.BC_investment_modal.modal .modal-header .modal-sub-header h3 { font-size: 1rem; font-weight: 400; }
+.BC_investment_modal.modal .modal-header .modal-sub-header p { font-size: 0.8rem; margin: 0; color: #333; font-weight: 400; }
+.BC_investment_modal.modal .modal-header .modal-sub-header p span { color: #000; }
+.BC_investment_modal.modal .modal-header img { width: 1.5rem; margin: 0.5rem 1rem; }
+.BC_investment_modal.modal .modal-body .card .card-img-top { width: 8rem; margin-right: 1rem; float: left; }
+.BC_investment_modal.modal .modal-body .card .card-body { padding: 0 1.25rem; }
+.BC_investment_modal.modal .modal-body .card .card-body p { font-size: 1rem; font-weight: 300; margin: 0; }
+.BC_investment_modal.modal .modal-footer { border-top: none; padding: 0 1rem; margin-bottom: 1rem; }
+.BC_investment_modal.modal .modal-footer .btn { background-color: #000; padding: 0.2rem 1rem; font-size: 0.8rem; border: none; border-radius: 0; }
+
+/******** #Contact ********/
+.BC_section_7 { height: 100vh; width: 100%; position: relative; background-color: #f3f4f6; }
+.BC_section_7 .card { width: 76%; margin-left: auto; padding: 2rem 3rem; z-index: 998; height: 100vh; }
+.BC_section_7 .card h1 { font-weight: 300; color: #222; font-size: 0.8rem; margin-bottom: 1rem; line-height: 1; }
+.BC_section_7 .card h3 { font-weight: 300; font-size: 3.5rem; margin: 0.5rem 0; color: #222; width: 70%; }
+.BC_section_7 .card form { width: 40%; margin-bottom: 2rem; }
+.BC_section_7 .card form .form-group { margin: 0.375rem 0; }
+.BC_section_7 .card form .form-group input { background: transparent; padding: 0.7rem 0; color: #222; border-radius: 0; border-bottom-color: #777a7a; border-top: none; border-left: none; border-right: none; }
+.BC_section_7 .card form .form-group input:focus { box-shadow: #777a7a; }
+.BC_section_7 .card form .btn { margin-top: 1rem; background: #000; border-radius: 0; border: none; padding: 0.375rem 1.5rem; }
+.BC_section_7 .card p { margin: 0; }
+.BC_section_7 .card .BC_scroll_link { font-size: 0.8rem; color: #000; position: absolute; bottom: 5rem; left: 3rem; }
+
+@media only screen and (min-width: 1021px) and (max-width: 1260px) { .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -56rem; }
+  .BC_section_1 .card .BC_scroll_link, .BC_section_2a .card .BC_scroll_link, .BC_section_2b .card .BC_scroll_link, .BC_section_3 .BC_section_3_frame .BC_scroll_link, .BC_section_4 .card .BC_scroll_link, .BC_section_5 .BC_section_5_frame .BC_scroll_link, .BC_section_6 .BC_section_6_frame .BC_scroll_link, .BC_section_7 .card .BC_scroll_link { bottom: 1rem; left: 1rem; }
+  .BC_section_2a .card h2, .BC_section_2b .card ul li h3 { font-size: 2rem; }
+  .BC_section_5 .BC_section_5_frame .card { text-align: center; margin-bottom: 2rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-img-top { width: 8rem; margin: auto; border-radius: 5rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-body p { height: auto; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments { width: 85%; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top { margin: 0; }
+  .BC_section_7 .card { align-items: center; text-align: center; }
+  .BC_section_7 .card form { width: 45%; } }
+@media only screen and (min-width: 566px) and (max-width: 1020px) { .navbar.navbar-expand-lg { position: fixed; z-index: 999; height: auto; width: 100%; flex-flow: wrap; justify-content: space-between; align-items: flex-start; padding: 0.5rem; background: rgba(0, 0, 0, 0.96); margin: 0; box-shadow: 1px 1px 15px -5px #999; }
+  .navbar.navbar-expand-lg .navbar-collapse .navbar-nav { margin: 2rem auto 2rem 0.5rem; }
+  .navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item { margin: 0.5rem 0; }
+  .navbar.navbar-expand-lg .navbar-brand h1 { font-size: 6rem; }
+  .navbar.navbar-expand-lg .navbar-brand p { font-size: 10px; margin-bottom: 0; }
+  .navbar.navbar-expand-lg .navbar-brand, .navbar.header.changed .navbar-brand { margin-top: 1rem; }
+  .navbar.navbar-expand-lg .navbar-toggler { margin: 1.1rem 0; }
+  .navbar.navbar-expand-lg .navbar-toggler svg { width: 5rem; height: 5rem; color: #fff; }
+  .navbar.header.changed .navbar-toggler svg { width: 5rem; height: 5rem; color: #000; }
+  .navbar.header.changed { background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000; }
+  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -56rem; }
+  .BC_section_1 .card, .BC_section_2a .card, .BC_section_2b .card, .BC_section_3 .BC_section_3_frame, .BC_section_4 .card, .BC_section_5 .BC_section_5_frame, .BC_section_6 .BC_section_6_frame, .BC_section_7 .card { width: 100%; padding: 4rem 1rem; }
+  .BC_section_1 .card h1 { font-size: 2rem; margin-top: 9rem; margin-bottom: 1rem; }
+  .BC_section_2a .card h1, .BC_section_2b .card h1, .BC_section_3 .BC_section_3_frame .BC_section_3a h1, .BC_section_4 .card h1, .BC_section_5 .BC_section_5_frame h1, .BC_section_6 .BC_section_6_frame h1, .BC_section_7 .card h1, .BC_section_3b { margin-top: 9rem; }
+  .BC_section_1 .card .BC_scroll_link, .BC_section_2a .card .BC_scroll_link, .BC_section_2b .card .BC_scroll_link, .BC_section_3 .BC_section_3_frame .BC_scroll_link, .BC_section_4 .card .BC_scroll_link, .BC_section_5 .BC_section_5_frame .BC_scroll_link, .BC_section_6 .BC_section_6_frame .BC_scroll_link, .BC_section_7 .card .BC_scroll_link { bottom: 1rem; left: 1rem; }
+  .BC_section_2a .card h2, .BC_section_2b .card ul li h3 { font-size: 2rem; }
+  .BC_section_5 .BC_section_5_frame .card { text-align: center; margin-bottom: 2rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-img-top { width: 8rem; margin: auto; border-radius: 5rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-body p { height: auto; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments { width: 85%; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top { margin: 0; }
+  .BC_section_7 .card { align-items: center; text-align: center; }
+  .BC_section_7 .card form { width: 45%; } }
+@media only screen and (max-width: 565px) { .navbar.navbar-expand-lg { position: fixed; z-index: 999; height: auto; width: 100%; flex-flow: wrap; justify-content: space-between; align-items: flex-start; padding: 0.5rem; background: rgba(0, 0, 0, 0.96); margin: 0; box-shadow: 1px 1px 15px -5px #999; }
+  .navbar.navbar-expand-lg .navbar-collapse .navbar-nav { margin: 2rem auto 2rem 0.5rem; }
+  .navbar.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item { margin: 0.5rem 0; }
+  .navbar.navbar-expand-lg .navbar-brand, .navbar.header.changed .navbar-brand { margin-top: 1rem; }
+  .navbar.navbar-expand-lg .navbar-toggler { margin: 0.5rem 0; }
+  .navbar.navbar-expand-lg .navbar-toggler svg { width: 3rem; height: 3rem; color: #fff; }
+  .navbar.header.changed .navbar-toggler svg { width: 3rem; height: 3rem; color: #000; }
+  .navbar.navbar-expand-lg .navbar-brand h1, .navbar.header.changed .navbar-brand h1 { font-size: 4rem; }
+  .navbar.navbar-expand-lg .navbar-brand p, .navbar.header.changed .navbar-brand p { font-size: 6px; margin-bottom: 0; }
+  .navbar.header.changed { background-color: rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 15px -5px #000; }
+  .BC_section_1, .BC_section_2a, .BC_section_2b, .BC_section_3, .BC_section_4, .BC_section_5, .BC_section_6, .BC_section_7 { width: 100%; height: auto !important; overflow: auto !important; background-repeat: no-repeat; background-size: cover; background-position-x: -58rem; }
+  .BC_section_1 .card, .BC_section_2a .card, .BC_section_2b .card, .BC_section_3 .BC_section_3_frame, .BC_section_4 .card, .BC_section_5 .BC_section_5_frame, .BC_section_6 .BC_section_6_frame, .BC_section_7 .card { width: 100%; padding: 4rem 1rem; }
+  .BC_section_1 .card h1 { font-size: 1.5rem; margin-top: 7rem; margin-bottom: 1rem; }
+  .BC_section_1 .card p { width: 100%; }
+  .BC_section_2a .card h1, .BC_section_2b .card h1, .BC_section_3 .BC_section_3_frame .BC_section_3a h1, .BC_section_4 .card h1, .BC_section_5 .BC_section_5_frame h1, .BC_section_6 .BC_section_6_frame h1, .BC_section_7 .card h1 { margin-top: 3rem; }
+  .BC_section_1 .card .BC_scroll_link, .BC_section_2a .card .BC_scroll_link, .BC_section_2b .card .BC_scroll_link, .BC_section_3 .BC_section_3_frame .BC_scroll_link, .BC_section_4 .card .BC_scroll_link, .BC_section_5 .BC_section_5_frame .BC_scroll_link, .BC_section_6 .BC_section_6_frame .BC_scroll_link, .BC_section_7 .card .BC_scroll_link { bottom: 1rem; left: 1rem; }
+  .BC_section_2a .card h2, .BC_section_2b .card ul li h3 { font-size: 1.5rem; width: 100%; }
+  .BC_section_2a .card p, .BC_section_2b .card p, .BC_section_4 .card p, .BC_section_7 .card h3, .BC_section_7 .card form { width: 100%; }
+  .BC_section_3 .BC_section_3_frame .BC_section_3a .accordion .card .card-header button { font-size: 1.2rem; }
+  .BC_section_3 .BC_section_3_frame .BC_section_3b .card { margin-top: 1.5rem; display: -webkit-inline-box; flex-wrap: wrap; }
+  .BC_section_3 .BC_section_3_frame .BC_section_3b .card h3 { margin: 0 0.5rem; font-size: 1.5rem; width: 6rem; text-align: center; }
+  .BC_section_4 .card h1 { margin-bottom: 0.5rem; }
+  .BC_section_4 .card h3 { font-size: 1.2rem; width: 100%; margin: 0.5rem 0; }
+  .BC_section_4 .card h4 { margin: 0; font-size: 1rem; }
+  .BC_section_4 .card ul li { width: 100%; margin: 0.5rem 0 0 0; }
+  .BC_section_4 .card ul li p, .BC_section_4 .card p { line-height: 1.2; font-size: 0.9rem; }
+  .BC_section_5 .BC_section_5_frame .card { margin-bottom: 1rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-body .card-title { font-size: 1rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-body .card-text { font-size: 0.8rem; }
+  .BC_section_5 .BC_section_5_frame .card .card-body a { color: #fff; background-color: #000; width: 100%; }
+  .BC_section_5 .BC_section_5_frame .card .card-body .social_link { display: none; }
+  .BC_section_5 .BC_section_5_frame .card .card-body p { height: 3rem; line-height: 1.2; overflow: hidden; margin-bottom: 1rem; display: none; }
+  .BC_team_modal.modal .modal-header .modal-sub-header .card-img-top { width: 4rem; height: 4rem; }
+  .BC_team_modal.modal .modal-header .modal-sub-header h3 { font-size: 1.2rem; }
+  .BC_team_modal.modal .modal-header img { width: 1.5rem; margin: 0.5rem 0rem 0.5rem 2rem; }
+  .BC_section_6 .BC_section_6_frame p { line-height: 1.2; }
+  .BC_section_6 .BC_section_6_frame .BC_current_investments .card-body { justify-content: flex-start; align-items: center; }
+  .BC_section_6 .BC_section_6_frame .BC_current_investments .card-body a { padding: 0; }
+  .BC_section_6 .BC_section_6_frame .BC_current_investments .card-body a .card-img-top { width: 4rem; margin: 0.5rem; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments { width: 100%; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card { margin-top: 1rem; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-body { display: none; }
+  .BC_section_6 .BC_section_6_frame .BC_prior_investments .BC_prior_investments_container .card .card-img-top { width: 5rem; margin: 0; }
+  .BC_section_7 .card h3 { font-size: 2rem; } }
+
